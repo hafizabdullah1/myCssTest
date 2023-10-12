@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+    <link rel="shortcut icon" href="./preview_themeforest_net/blog-one-img-2.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Sans+Narrow&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: tahoma;
+    }
+    .env{
+        height: 9vh;
+        width: 100%;
+        background: #262626;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .env img{
+        height: 2.9vh;
+        position: absolute;
+        left: 20px;
+        top: 18px;
+    }
+    .env button{
+        height: 5.3vh;
+        width: 7vw;
+        background-color: #7AA93C;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 14px;
+    }
+    nav{
+        height: 17.2vh;
+        width: 100%;
+        background: #17161A;
+        position: sticky;
+        top: 56px;
+        border-top:1px solid black;
+        z-index: 1;
+    }
+    nav img{
+        position: absolute;
+        top: 40px;
+        left: 50px;
+    }
+    nav ul{
+        list-style-type: none;
+        position: relative;
+        left: 22%;
+        top: 45%;
+        width: 60%;
+    }
+    nav li{
+        float: left;
+        margin-left: 40px;
+        color: white;
+        overflow: hidden;
+        font-size: 15px;
+        position: relative;
+        width: 75px;
+        cursor: pointer;
+        transition: .6s;
+        text-align: center;
+    }
+    nav li::after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: red;
+        left: 100%;
+        top: 50%;
+    }
+    nav li:hover::after{
+        left: -10%;
+        transition: .6s;
+    }
+    nav li:nth-child(1)::after{
+        left: -5%;
+    }
+    .main{
+        height: 200vh;
+        width: 99.6%;
+        /* border: 1px solid black; */
+        background-color:transparent;
+        padding: 1px;
+    }
+    .main h5{
+        text-align: center;
+        margin-top: 30px;
+        color: red;
+        font-weight: normal;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .main h1{
+        text-align: center;
+        margin-top: 20px;
+        color: rgba(0, 0, 0, 0.841);
+        font-size: 50px;
+        /* font-weight: normal;   */
+        font-family: 'Raleway', sans-serif;
+    }
+    .main ul{
+        list-style-type: none;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+    .main li{
+        color: rgba(0, 0, 0, 0.564);
+        float: left;
+        width: 120px;
+        text-align: center;
+        font-size: 15px;
+        /* font-weight: bold; */
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    .main li::after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: red;
+        left: 100%;
+        top: 50%;
+    }
+    .main li:hover::after{
+        left: -10%;
+        transition: .6s;
+    }
+    .main li:nth-child(1)::after{
+        left: -5%;
+    }
+    .main li:nth-child(1){
+        width: 60px;
+    }
+    .cards{
+        height: 150vh;
+        width: 100%;
+        background-color: transparent;
+        position: relative;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card{
+        height: 65vh;
+        width: 27.5vw;
+        background-color: aqua;
+        margin-left: 32px;
+        /* margin-top: 0px; */
+        position: relative;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .pic{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition: .5s;
+    }
+    .pic{
+        background-image: url(./preview_themeforest_net/project-one-img-1.jpg);
+        background-size: 100% 100%;
+        filter: grayscale();
+    }
+    .pic2{
+        background-size: 100% 100%;
+        background-image: url(./preview_themeforest_net/project-one-img-2.jpg);
+        filter: grayscale();
+    }
+    .pic3{
+        background-image: url(./preview_themeforest_net/project-one-img-3.jpg);
+        background-size: 100% 100%;
+        filter: grayscale();
+    }
+    .pic4{
+        background-image: url(./preview_themeforest_net/project-one-img-4.jpg);
+        background-size: 100% 100%;
+        filter: grayscale();
+    }
+    .pic5{
+        background-image: url(./preview_themeforest_net/project-one-img-5.jpg);
+        background-size: 100% 100%;
+        filter: grayscale();
+    }
+    .pic6{
+        background-image: url(./preview_themeforest_net/project-one-img-6.jpg);
+        background-size: 100% 100%;
+        filter: grayscale();
+    }
+    .text{
+        height: 18vh;
+        width: 90%;
+        background: #000000c7;
+        position: relative;
+        top: 72.2%;
+        transform: rotateX(-90deg);
+        transition: .6s;
+    }
+    .text::after{
+        content: '';
+        height: 2px;
+        background-color: red;
+        width: 30px;
+        position: absolute;
+        top: 40px;
+    }
+    .text h2{
+        color: white;
+        font-weight: normal;
+        margin-left: 60px;
+        margin-top: 10px;
+        font-family:sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .text h4{
+        color: white;
+        font-weight: normal;
+        font-size: 13px;
+        margin-left: 60px;
+        /* position: absolute; */
+        padding-top: 35px;
+    }
+    .card:hover .pic{
+        transform: scale(1.1);
+        transition: .5s;
+        filter: none;
+    }
+    .card:hover .text{
+        transform: rotateX(0deg);
+        transition: .5s;
+    }
+    .text h2:hover{
+        color: red;
+        transition: .5s;
+    }
+    .main sup{
+        color: transparent;
+    }
+    .main li:hover sup{
+        color: rgba(0, 0, 0, 0.564);
+        transition: .4s;
+    }
+    .main li:nth-child(1) sup{
+        color: rgba(0, 0, 0, 0.564);
+    }
+    
+</style>
+<body>
+    <div class="env">
+        <img src="./preview_themeforest_net/envato_market-dde916a48af7413e54aa058fe7ae6856752fca799da4bec355f00aea904bfa19.svg" alt="">
+        <button>Buy now</button>
+    </div>
+    <nav>
+        <img src="./preview_themeforest_net/logo-1.png" alt="">
+        <ul>
+            <li>HOME</li>
+            <li>PAGES</li>
+            <li>SERVICES</li>
+            <li>PROJECT</li>
+            <li>BLOG</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+    <div class="main">
+        <h5>RECENT PROJECTS</h5>
+        <h1>WORK SHOWCASE</h1>
+        <ul>
+            <li>ALL <sup>(6)</sup></li>
+            <li>BRANDING <sup>(5)</sup></li>
+            <li>PHOTORAPHY <sup>(2)</sup></li>
+            <li>WEB DESIGN <sup>(5)</sup></li>
+            <li>APPS <sup>(3)</sup></li>
+        </ul>
+
+        <div class="cards">
+            <div class="card card1">
+                <div class="pic"></div>
+                <div class="text"><h4>GRAPHIC</h4>
+                    <h2>FIMLOR EXPERIENCE</h2>
+                </div>
+            </div>
+        <div class="card card2">
+            <div class="pic pic2"></div>
+            <div class="text"><h4>GRAPHIC</h4>
+                <h2>FIMLOR EXPERIENCE</h2>
+            </div>
+        </div>
+        <div class="card card3">
+            <div class="pic pic3"></div>
+            <div class="text"><h4>GRAPHIC</h4>
+                <h2>FIMLOR EXPERIENCE</h2>
+            </div>
+        </div>
+        <div class="card card4">
+            <div class="pic pic4"></div>
+            <div class="text"><h4>GRAPHIC</h4>
+                <h2>FIMLOR EXPERIENCE</h2>
+            </div>
+        </div>
+        <div class="card card5">
+            <div class="pic pic5"></div>
+            <div class="text"><h4>GRAPHIC</h4>
+                <h2>FIMLOR EXPERIENCE</h2>
+            </div>
+        </div>
+        <div class="card card6">
+            <div class="pic pic6"></div>
+            <div class="text"><h4>GRAPHIC</h4>
+                <h2>FIMLOR EXPERIENCE</h2>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

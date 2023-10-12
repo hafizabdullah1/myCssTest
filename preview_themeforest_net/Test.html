@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Sans+Narrow&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: tahoma;
+    }
+    .env{
+        height: 9vh;
+        width: 100%;
+        background: #262626;
+        position: sticky;
+        top: 0;
+    }
+    .env img{
+        height: 2.9vh;
+        position: absolute;
+        left: 20px;
+        top: 18px;
+    }
+    .env button{
+        height: 5.3vh;
+        width: 7vw;
+        background-color: #7AA93C;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 14px;
+    }
+    nav{
+        height: 17.2vh;
+        width: 100%;
+        background: #17161A;
+        position: sticky;
+        top: 56px;
+        border-top:1px solid black;
+    }
+    nav img{
+        position: absolute;
+        top: 40px;
+        left: 50px;
+    }
+    nav ul{
+        list-style-type: none;
+        position: relative;
+        left: 22%;
+        top: 45%;
+        width: 60%;
+    }
+    nav li{
+        float: left;
+        margin-left: 40px;
+        color: white;
+        overflow: hidden;
+        font-size: 15px;
+        position: relative;
+        width: 75px;
+        cursor: pointer;
+        transition: .6s;
+        text-align: center;
+    }
+    nav li::after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: red;
+        left: 100%;
+        top: 50%;
+    }
+    nav li:hover::after{
+        left: -10%;
+        transition: .6s;
+    }
+    nav li:nth-child(1)::after{
+        /* background-color: transparent; */
+        left: -10%;
+    }
+    .main{
+        height: 120vh;
+        width: 99.6%;
+        /* border: 1px solid black; */
+        background-color:#7AA93C;
+        padding: 1px;
+    }
+    .main h5{
+        text-align: center;
+        margin-top: 30px;
+        color: red;
+        font-weight: normal;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .main h1{
+        text-align: center;
+        margin-top: 20px;
+        color: rgba(0, 0, 0, 0.841);
+        font-size: 50px;
+        /* font-weight: normal;   */
+        font-family: 'Raleway', sans-serif;
+    }
+    .main ul{
+        list-style-type: none;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+    .main li{
+        color: rgba(0, 0, 0, 0.464);
+        float: left;
+        width: 120px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="env">
+        <img src="./preview_themeforest_net/envato_market-dde916a48af7413e54aa058fe7ae6856752fca799da4bec355f00aea904bfa19.svg" alt="">
+        <button>Buy now</button>
+    </div>
+    <nav>
+        <img src="./preview_themeforest_net/logo-1.png" alt="">
+        <ul>
+            <li>HOME</li>
+            <li>PAGES</li>
+            <li>SERVICES</li>
+            <li>PROJECT</li>
+            <li>BLOG</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+    <div class="main">
+        <h5>RECENT PROJECTS</h5>
+        <h1>WORK SHOWCASE</h1>
+        <ul>
+            <li>ALL</li>
+            <li>BRANDING</li>
+            <li>PHOTORAPHY</li>
+            <li>WEB DESIGN</li>
+            <li>APPS</li>
+        </ul>
+        <!-- <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div> -->
+    </div>
+</body>
+</html>
